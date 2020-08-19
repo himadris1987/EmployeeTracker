@@ -17,6 +17,7 @@ class Search extends Component {
     API.getRandomEmployee()
       .then(res => this.setState({ employees: res.data.message }))
       .catch(err => console.log(err));
+      console.log(this.employees);
   }
 
   handleInputChange = event => {
@@ -32,7 +33,7 @@ class Search extends Component {
           <SearchForm
             handleFormSubmit={this.handleFormSubmit}
             handleInputChange={this.handleInputChange}
-            employees={this.state.breeds}
+            employees={this.state.employees}
           />
           <SearchResults results={this.state.results} />
         </Container>
