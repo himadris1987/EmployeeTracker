@@ -1,0 +1,42 @@
+nav {
+    background-position: center;
+    background-size: 100%;
+    overflow: auto;
+    background-repeat: no-repeat;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 100px;
+    padding-left: 100px;
+    height: 85px;
+    text-decoration: none;
+}
+
+#navbar-brand  {
+    text-decoration: none;
+    color:Blue;
+}
+
+#navbar-nav{
+
+    color:Blue;
+}
+/* #nav-item{
+    background-color: blue;
+    color:gold;
+} */
+
+#navbars{
+    background-color: blue;
+    color:gold;
+}
+header{
+    background-color: gold
+}
+#links
+{
+    color: blue;
+}

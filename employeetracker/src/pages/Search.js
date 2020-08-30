@@ -15,7 +15,9 @@ class Search extends Component {
   // When the component mounts, get a list of all available base breeds and update this.state.breeds
   componentDidMount() {
     API.getRandomEmployee()
-      .then(res => this.setState({ employees: res.data.message }))
+      .then(res => {
+        
+        this.setState({ employees: res.data.results })})
       .catch(err => console.log(err));
       console.log(this.employees);
   }
@@ -29,7 +31,7 @@ class Search extends Component {
     return (
       <div>
         <Container style={{ minHeight: "80%" }}>
-          <h1 className="text-center">Search Employees</h1>
+          <h1 id="containers"className="text-center">Search Employees</h1>
           <SearchForm
             handleFormSubmit={this.handleFormSubmit}
             handleInputChange={this.handleInputChange}

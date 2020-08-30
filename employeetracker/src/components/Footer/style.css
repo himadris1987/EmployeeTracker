@@ -1,0 +1,36 @@
+.footer {
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    color:gold;
+    padding: 10px 0;
+    clear: both;
+    font-size: 13px;
+    text-align: center;
+    align-items: center;
+    bottom: 0;
+    position: relative;
+    margin-top: 1%;
+    font:bold;
+  }
+  
+  @media screen and (max-width: 980px) {
+    .footer {
+      font-size: 12px;
+      background-size: 85%;
+    }
+  }
+  
+  @media screen and (max-width: 770px) {
+    .footer {
+      background-size: 100%;
+  
+    }
+  }
+    
+  @media screen and (max-width: 640px) {
+    .footer {
+        background-position: center;
+        background-size: cover;
+    }
+  }
